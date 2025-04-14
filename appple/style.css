@@ -1,0 +1,177 @@
+.bgc{
+    background-color: black;
+}
+.navbar-main{
+    color: white;
+   }
+.item a{
+    color: white;
+    text-decoration: none;
+}
+
+.hero{
+ width: auto;
+ height:600px;   
+}
+.hero-1{
+    background-image: url(./asssets/man.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat ;
+}
+.hero-1 .con{
+    margin-top: 20%;
+    color: white;
+}
+.hero .con .butt button{
+    border: none;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+.hero .con .butt button.bg-none{
+    background: transparent;
+    color:white;
+    border: 0.8px solid white;
+}
+.hero .con .butt-2 button.bg-none{
+    background: transparent;
+    color:  rgba(17, 17, 234, 0.509);
+    border: 1.5px solid  rgba(17, 17, 234, 0.509);
+    
+
+}
+.hero .con .butt-2 button{
+    padding: 5px 15px;
+    background-color: rgba(17, 17, 234, 0.509);
+    color: white;
+    border-radius: 20px;
+    border: none;
+}
+.hero-3
+{
+    background-image: url(./asssets/val.png);
+    background-position: center;
+background-size:cover;
+background-repeat:no-repeat ;
+}
+.hero .con .butt-3 button{
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: none;
+}
+.shop-card{
+    width: auto;
+    height: 450px;
+}
+.shop-card-1{
+    background-image: url(./asssets/16.jpg);
+    background-position: center;
+background-size:cover;
+background-repeat:no-repeat ;
+}
+.shop-con{
+    color: white;
+}
+.shop-card button{
+    padding: 5px 15px;
+    border-radius: 20px;
+    border: none;
+    margin-left: 10px;
+}
+.shop-card-1-butt .text-white{
+    background: none;
+    border: 0.8px solid white;
+}
+.shop-card-2{
+    background-image: url(./asssets/smart\ \(2\).jpg);
+    background-position: center;
+background-size:cover;
+background-repeat:no-repeat ;
+}
+.shop-card-2-butt .text-primary{
+    border: 0.8px solid  rgba(17, 17, 234, 0.509);
+}
+.shop-card-3{
+    background-image: url(./asssets/ipad.jpg);
+    background-position: center;
+background-size:cover;
+background-repeat:no-repeat ;
+}
+.shop-card-4{
+    background-image: url(./asssets/macbook.jpg);
+    background-position: center;
+background-size:cover;
+background-repeat:no-repeat ;
+}
+.shop-card-5{
+    background-image: url(./asssets/2phone.jpg);
+    background-position: center;
+background-size:cover;
+background-repeat:no-repeat ;
+}
+.shop-card-6{
+    background-image: url(./asssets/app-card.jpg);
+    background-position: center;
+background-size:cover;
+background-repeat:no-repeat ;
+}
+
+.carosel img{
+    height: 400px;
+    
+}
+@media screen and (min-width:220px){
+    .hero-2{
+
+        background-image: url(./asssets/iphone.jpg);
+        background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat ;
+    }
+   .hero-2 .con{
+    color: white;padding-top: 45%;
+   }
+   .hero{
+    width: auto;
+    height:400px;   
+   }
+
+}
+@media screen and (min-width:520px){
+    
+        .hero{
+            width: auto;
+            height:500px;   
+           }  
+    
+}
+
+@media screen and (min-width:820px){
+    .hero-2{
+        background-image: url(./asssets/x-16pro.jpg);
+        background-position: center;
+    background-size:cover;
+    background-repeat:no-repeat ;
+    }
+    .hero-2 .con{
+        color: white;padding-top: 10%;
+       }
+       .hero{
+        width: auto;
+        height:600px;   
+       }
+}
+@media screen and (min-width:1620px){
+    .hero{
+      width: auto;
+      height: 800px;  
+    }
+}
+@media screen and (min-width:520px){
+    
+    .shop-card  {
+        width: auto;
+        height:550px;   
+       }  
+
+}

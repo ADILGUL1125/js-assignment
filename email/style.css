@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.main{
+    display: flex;
+}
+.l-side{
+    width: 20vw;
+    height: 450px;
+    /* background-color: yellow; */
+}
+.logo div{
+    width: 70%;
+    /* background-color: aqua; */
+    text-align: center;
+    padding-top: 10px;
+}
+.logo div img{
+    width: 100px;
+}
+
+.logo i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.com{
+    margin-left: 10px;
+    width: 110px;
+    background-color:rgb(189, 189, 240);
+    border-radius: 20px;
+    margin-top: 15px;
+}
+.com  .pen{
+    
+    padding: 10px;
+    font-weight: 500;
+}
+.l-item{
+    /* background-color: aquamarine; */
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: nowrap       ;
+}
+.l-side .l-item .icon, .lab{
+    width: 80%;
+    height: auto;
+    /* background-color: burlywood;     */
+   
+
+}
+.lab{
+    font-size: 25px;
+}
+.icon i{
+    margin-right: 10px;
+}
+.con{
+    width: 80vw;
+    height: 400px;
+    /* background-color: cadetblue; */
+    /* display: flex; */
+}
+.nav{
+    width: 100%;
+    /* background-color: azure; */
+    display: flex;
+    justify-content: space-between;
+}
+.icons-tab{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.icons-tab .circle{
+    display: inline-block;
+    height: 25px;   
+    width: 25px;
+    /* border: 1px solid black; */
+    text-align: center;
+    background-color: rgba(110, 33, 252, 0.575);
+    color: white;
+    border-radius: 50%;
+    }
+    .search-bar{
+        border: 1px solid ;
+        border-radius: 20px;
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+    .search-bar input{
+        background: transparent ;
+        border: none;
+        width: 80%;
+    }
+    .con-body{
+        width: 100%;
+        /* background-color: beige; */
+        height: 300px;
+        /* display: flex; */
+        
+    }
+    .hi{
+        display: flex;
+        width: 100%;
+    }
+    .div-1{
+        /* position: relative;  */
+        width: 100%;
+    height:30px ;
+    /* background-color: brown; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between  ;
+
+}
+
+.list{
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+    /* background-color: burlywood; */
+
+}
+.num{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+width: 14%;
+/* background-color:darkgoldenrod ; */
+ }
+ .icons-tab i{
+    /* margin-right: 20px; */
+ }
+ .my-mail{
+    width: 100%;
+    height: 400px;
+    /* background-color: black; */
+    position: relative;
+    overflow-y: scroll;
+    
+ }
+ .nav-2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+
+ }
+ .nav-2 i{
+    margin-right: 5px;
+ }
+ .mail{
+    font-size: small;
+    width: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: space-between;
+ }
+.mail-1{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+.ash{
+    width: 60%;
+}
+@media screen and (max-width:990px) {
+.logo div{
+    width: 100%;
+}
+.num{
+    width: 25%;
+}
+.list{
+    width: 20%;
+}
+    
+}
+@media screen and (max-width:690px) {
+    .logo div{
+        width: 100%;
+    }
+    .logo div img{
+        width: 80px;
+    }
+    .logo i{
+        margin-right: 5px;
+        font-size: 15px;
+    } 
+    .mail-1{
+        width: 35%;
+    }
+    .ash{
+        width: 65%;
+
+    }
+    }
+    @media screen and (max-width:630px) {
+        .com{
+            margin-left: 10px;
+            width: 100px;
+        
+            border-radius: 20px;
+            margin-top: 10px;
+        }
+        .com  .pen{
+            
+            padding: 5px;
+            font-weight: 400;
+        } 
+        .mail-1{
+            width: 30%;
+            font-size: 10px;
+        }
+        .ash{
+            width: 70%;
+            font-size: 10px;
+
+    
+        }
+    }
+    @media screen and (max-width:570px) {
+        .l-item{
+            height: 250px;
+            align-items: flex-start;
+        }
+        .lab, icon{
+            width: 100%;
+        }
+        .icon i{
+            margin-right: 0px   ;
+        }
+        .com{
+            margin-left: 0px;
+            width: 100%;
+        
+            border-radius: 8px;
+            margin-top: 5px;
+            font-size: 12px;
+        }
+        .com  .pen{
+            
+            padding: 0px;
+            font-weight: 100;
+        }
+        .l-side{
+            height: auto;
+        }
+        .mail-1 i{
+            display: none;
+        }
+        .num{
+            width: 35%;
+        }
+    }
+    @media screen and (max-width:455px){
+        .l-side .l-item .icon, .lab{
+            font-size: 12px;
+        } 
+        .nav-2{
+            font-weight: 200;
+            font-size: 12px;
+        } 
+        .search-bar{
+            width: 50%;
+
+        }
+        .icons-tab{
+            width: 45%;
+        }
+    }
+    @media screen and (max-width:520px) {
+        .logo div{
+            width: 100%;
+        }
+        .logo div img{
+            width: 60px;
+        }
+        .logo i{
+            margin-right: 0px;
+            font-size: 12px;
+        } 
+        
+        }
+        @media screen and (max-width:382px) {
+            .logo div{
+                width: 100%;
+            }
+            .logo div img{
+                width: 40px;
+            }
+            .logo i{
+                margin-right: 0px;
+                font-size: 10px;
+            } 
+            }
+            .num{
+                width: 50%;
+
+            }
+            .list{
+                width: 30%;
+            }

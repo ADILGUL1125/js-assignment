@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>digital clock</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .clock {
+
+            width: 180px;
+            height: 100px;
+            background-color: rgb(62, 62, 67);
+            border: 8px solid whitesmoke;
+            border-radius: 20px;
+
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 0 0 20px rgba(255, 165, 0, 0.4)
+        }
+
+        .main {
+            background-color: rgb(52, 50, 50);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #c-div {
+            color: orange;
+            width: 90%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            align-items: center;
+        }
+        #date{
+            color: orange;
+        }
+
+        #hr,
+        #min,
+        #sec {
+            font-size: 2em;
+            font-weight: bolder;
+        }
+
+        #d-div {
+            color: magenta;
+        }
+
+        #ap {
+            color: magenta;
+            font-size: 15px;
+            
+        }
+        #mon{
+            color: magenta;
+        }
+        #dat-1,#yea{
+            font-size: 1.5em;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="clock">
+            <div id="c-div">
+                <span id="hr">00 </span>:
+                <span id="min">00</span>:
+                <span id="sec">00</span>
+                <span id="ap">AM</span>
+            </div>
+            <div id="d-div">
+                <span id="day"></span>
+            </div>
+            <div id="date">
+                <span id="dat-1"></span>
+                <span id="mon"></span>
+                <span id="yea"></span>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <script>
+        var hrspan = document.getElementById('hr')
+        var minspan = document.getElementById('min')
+        var secspan = document.getElementById('sec')
+        var ampm = document.getElementById('ap')
+
+        var day=document.getElementById('day')
+        var d = document.getElementById('dat-1')
+        var m = document.getElementById('mon')
+        var y = document.getElementById('yea')
+
+        var dayName = ["SUNADAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "SATURDAY"]
+        var month = ["JANUARY", "FEBRAURY", "MARCH", "APRIL", "MAY", "JUNE", "JULY", "AUGUST", "SEPTEMBER", "OCTOBER", "NOVEMBER", "DECEMBER"]
+
+        function clock() {
+            var now = new Date()
+            if (now.getHours() > 12) {
+                hrspan.innerText = now.getHours() - 12
+
+            } else if (now.getHours() === 0) {
+                hrspan.innerText = 12
+
+            } else {
+                hrspan.innerText = now.getHours()
+
+            }
+            if (now.getHours() >= 12) {
+                ampm.innerText = "PM"
+
+            } else {
+                ampm.innerText = "AM"
+
+            }
+            minspan.innerText = now.getMinutes()
+            secspan.innerText = now.getSeconds();
+            if (now.getSeconds() < 10) {
+                secspan.innerText = "0" + now.getSeconds()
+            }
+            if (now.getMinutes() < 10) {
+                minspan.innerText = "0" + now.getMinutes()
+            }
+            day.innerText = dayName[now.getDay()]
+            d.innerText = now.getDate()
+
+            m.innerText = month[now.getMonth()] + ","
+            y.innerText = now.getFullYear()
+
+
+        }
+        setInterval(clock, 1000)
+
+
+
+
+    </script>
+</body>
+
+</html>
