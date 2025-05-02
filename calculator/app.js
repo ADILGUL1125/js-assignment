@@ -11,7 +11,7 @@ function valuetoset(btnvalue){
         inp.innerText=inp.innerText.slice(0,-1)
         return
     }
-    if(btnvalue === 'equ' ){
+    if(btnvalue === 'equ'    ){
         var result =eval(inp.innerText)
         out.innerText=result 
         return

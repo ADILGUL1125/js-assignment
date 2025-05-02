@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color game</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    
+
+    }
+    .main
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .color-box{
+        width: 100px;
+        height: 100px;
+        border: 2px solid orange;
+    }
+    .cover{
+        width: 80px;
+        height: 80px;
+        border: 2px solid black;
+    }
+    .other-box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+</style>
+<body>
+    <div class="main">
+        <div class="color-box">
+
+        </div>
+        <span> your score :<span id="score">0</span></span>
+        <div class="other-box">
+
+
+        </div>
+
+    </div>
+    <script>
+        var box=document.getElementsByClassName('color-box')[0]
+        var color=['orange','black','green','yellow']
+        var rand_c=Math.floor(Math.random()*4)
+        box.style.backgroundColor = color[rand_c]
+
+        var match_color=document.getElementsByClassName('other-box')[0]
+        var score =document.getElementById('score')
+        var count =0
+        function box_color(e){
+            var clicked_box=e.target.style.backgroundColor
+            console.log(clicked_box)
+            e.target.style.pointerEvents = "none";
+            e.target.style.opacity = 0.5;
+            if(clicked_box=== box.style.backgroundColor ){
+                 score.innerText = ++count
+                 
+                }else{if(count>0){
+                score.innerText = --count
+            }
+
+
+            }
+
+            
+        }
+        for(var i=0;i<10;i++){
+            var color_box=['orange','black','green','yellow']
+             var color_rand=Math.floor(Math.random()*4)
+            var adil=document.createElement('div')
+            adil.className='cover'
+            match_color.appendChild(adil)
+            adil.style.backgroundColor=color_box[color_rand]
+            adil.addEventListener('click',box_color)
+
+        }
+    </script>
+</body>
+</html>
