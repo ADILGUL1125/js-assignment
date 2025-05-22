@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo app</title>
+
+    <style>
+        #div{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
+        .main{
+            width: 350px;
+            height: 300px;
+            border: 1px solid black;
+            background-color: blanchedalmond;
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center; */
+            align-items: center;
+        }
+        .todorend{
+            margin-top: 10px;
+            width: 270px;
+            height: 25px;
+        border: 1px solid black;
+        padding:  0px 10px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.486);
+            color: greenyellow;
+
+            
+            
+        }
+        .todorend:hover{
+            transition: all 0.8s ease-in-out;
+            transform: translateY(5px);
+        }
+        .delbutt{
+            background-color: red;
+            color: blanchedalmond;
+            border: none;
+            border-radius: 20px;
+        }
+        #inp1{
+            /* margin-top: 20px; */
+        }
+        h3{
+            line-height: 0px;
+            text-align: center;
+            color: rgb(93, 89, 80);
+        }
+        input{
+            text-align: center;
+            /* padding:0px 10px; */
+            width: 240px;
+            height: 25px;
+            border: none;
+            border-radius: 20px ;
+            border: 1px solid black;
+            background: none;
+        }
+        #but{
+            background: none;
+            color:yellowgreen ;
+            background-color:rgb(93, 89, 80) ;
+            border-radius: 20px;
+            width: 50px;
+            height:28px;
+        }
+    </style>
+</head>
+<body>
+    <div id="div">
+        <div class="main">
+            <h3>Todo Tasks</h3>
+            <div id="inp1">
+                <input type="text" placeholder="add todo" id="inp2">
+                <button onclick="addtodo()" id="but">Add</button>
+
+            </div>
+            <div class="todobox">
+                
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
