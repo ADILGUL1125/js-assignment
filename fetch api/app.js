@@ -46,7 +46,7 @@ function rendercard(){
         </div>`
     }
 }
-rendercard()
+
 
 
 
